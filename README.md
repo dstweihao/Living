@@ -1,1 +1,43 @@
 # Living
+Living是基于android端开发的一款用于学习的功能型app，主要用于各种知识点的demo实现。我们都知道，实践才是检验真理的唯一标准，我们学习了技术再去做项目，倒不如为了实现项目的功能，边做项目边学习，这样针对性的学习，显然是大有裨益的。因为任何知识和技术都是为了项目服务的，理论性的东西如果不结合实践，那么将一无是处。
+  * 计划，通过demo+简书的方式，在运行app，见识到实例效果后，可通过点击按钮跳转到我的简书，简书上面的文章是该知识点详细的介绍。
+  * 功能模块：
+    * Java基础
+    * Android基础
+    * Martial Design控件
+      * Toolbar
+      * RecyclerView
+      * DeawerLayout
+      * SwipeRefreshLayout
+    * 自定义控件
+    * 设计模式
+      * 单例模式
+      * 工厂模式
+      * 建造者模式
+      * 适配器模式
+      * 装饰模式
+      * 策略模式
+      * 观察者模式
+    * 开源框架库
+      * 网路请求框架
+        * Retrofit
+        * OKHttp
+        * Volley
+      * 图片加载框架
+        * Fresco
+        * Glide
+        * Picasso
+        * ImageLoader
+      * 数据库
+         * greenDAO
+         * ormlite
+         * Litepal
+    * 第三方插件
+      * 百度数据统计
+      * 百度地图
+      * 个推推送
+      * Mob第三方分享
+      * BuglyBus追踪
+      * 环信即时通信
+    * Kotlin
+      
