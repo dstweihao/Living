@@ -1,51 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.wh.living.ui.activity.MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
-    <Button
-        android:id="@+id/bt_java"
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_color"/>
+
+    <com.wh.living.ui.fragment.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="java基础"/>
-    <Button
-        android:id="@+id/bt_android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Android基础"/>
-    <Button
-        android:id="@+id/bt_md"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Martial Design控件"/>
-    <Button
-        android:id="@+id/bt_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="自定义控件"/>
-    <Button
-        android:id="@+id/bt_design"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设计模式"/>
-    <Button
-        android:id="@+id/bt_open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="开源框架库"/>
-    <Button
-        android:id="@+id/bt_plugin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="第三方插件"/>
-    <Button
-        android:id="@+id/bt_kotlin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kotlin"/>
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0"/>
+
+    </com.wh.living.ui.fragment.FragmentTabHost>
 
 </LinearLayout>

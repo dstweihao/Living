@@ -25,17 +25,16 @@ public class OpenActivity extends BaseActivity {
         return R.layout.activity_open;
     }
 
+    @Override
+    protected void initView() {
 
-    @OnClick({R.id.bt_net, R.id.bt_image, R.id.bt_db})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.bt_net:
-                startActivity(RetrofitActivity.class, false);
-                break;
-            case R.id.bt_image:
-                break;
-            case R.id.bt_db:
-                break;
-        }
     }
+
+    @Override
+    protected void initData() {
+
+    }
+
+
+
 }

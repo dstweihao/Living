@@ -12,4 +12,15 @@ public class RetrofitActivity extends BaseActivity {
     public int getLayoutId() {
         return R.layout.activity_retrofit;
     }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
 }

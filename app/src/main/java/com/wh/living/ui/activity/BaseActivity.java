@@ -1,9 +1,7 @@
 package com.wh.living.ui.activity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
+import android.support.v4.app.FragmentActivity;
 import butterknife.ButterKnife;
 
 /*
@@ -11,7 +9,7 @@ import butterknife.ButterKnife;
  * @创建时间 2017/10/22 0022 1:30
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends FragmentActivity {
 
 
     private int mLayoutId;
@@ -22,9 +20,18 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutId());
         ButterKnife.bind(this);
 
+        initView();
+        initData();
+
+
     }
 
+
+
     public abstract int getLayoutId();
+
+    protected abstract void initView();
+    protected abstract void initData();
 
 
     public void startActivity(Class clazz, boolean isFinish) {

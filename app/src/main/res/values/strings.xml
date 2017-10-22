@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Living</string>
+    <string name="demo">实战</string>
+    <string name="job">面试</string>
+    <string name="book">书籍</string>
+    <string name="mine">我的</string>
 </resources>
